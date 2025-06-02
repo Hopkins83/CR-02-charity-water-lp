@@ -6,7 +6,210 @@
     <title>Charity Water Landing Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity:Water | Join the Movement</title>
+  <style>
+    /* Use a simple sans-serif font for the whole page */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #2E9DF7; /* Blue background */
+      color: white;
+    }
+
+    /* Header section styles */
+    .header {
+      background-color: #2E9DF7;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .brand {
+      color: #FFC907; /* Yellow color */
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .main-heading {
+      color: #FFC907;
+      font-size: 32px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    /* Simple triangle shape using borders */
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 100vw solid transparent;
+      border-right: 100vw solid transparent;
+      border-bottom: 100px solid #8BD1CB; /* Light teal */
+      margin-top: -20px;
+    }
+
+    /* Content section with text and image side by side */
+    .content {
+      background-color: #8BD1CB;
+      padding: 30px 10px;
+      text-align: left;
+    }
+
+    /* Use float for a simple two-column layout */
+    .text-box {
+      float: left;
+      width: 90%;
+      max-width: 350px;
+      padding: 20px;
+      color: #2E9DF7;
+      font-weight: bold;
+      box-sizing: border-box;
+    }
+
+    .image-box {
+      float: left;
+      width: 90%;
+      max-width: 350px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Clear floats after content */
+    .content::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Donate button style */
+    .donate-button {
+      background-color: #4FCB53; /* Green */
+      color: white;
+      padding: 12px 24px;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    /* Testimonials section */
+    .testimonials {
+      background-color: #fff;
+      color: #2E9DF7;
+      padding: 30px 10px;
+      text-align: center;
+    }
+
+    .testimonial {
+      margin: 20px auto;
+      max-width: 500px;
+      font-style: italic;
+      font-size: 18px;
+    }
+
+    /* Stats section */
+    .stats {
+      background-color: #fff;
+      color: #2E9DF7;
+      padding: 30px 10px;
+      text-align: center;
+    }
+
+    /* Simple stacked stats boxes */
+    .stat-box {
+      background-color: #FF902A; /* Orange */
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 15px auto;
+      width: 90%;
+      max-width: 300px;
+      font-weight: bold;
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: #2E9DF7;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Responsive: stack columns on small screens */
+    @media (min-width: 700px) {
+      .text-box, .image-box {
+        width: 45%;
+      }
+      .content {
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      .stat-box {
+        display: inline-block;
+        margin: 15px;
+      }
+    }
+  </style>
+</head>
 <body>
-    <!-- Add your HTML here -->
+
+  <!-- Header section -->
+  <div class="header">
+    <div class="brand">Charity:Water</div>
+    <div class="main-heading">Water is a Human Right<br>Join the Movement!</div>
+  </div>
+
+  <!-- Decorative triangle -->
+  <div class="triangle"></div>
+
+  <!-- Main content section with text and image -->
+  <div class="content">
+    <div class="text-box">
+      <p>
+        You don’t just donate—you create lasting change. Your support funds sustainable
+        solutions, empowers communities, and ensures clean water access for those who need it most.
+      </p>
+      <button class="donate-button">Donate Now</button>
+    </div>
+    <div class="image-box">
+      <!-- Replace the image source with your own image if needed -->
+      <img src="img/Screenshot 2025-05-28 122002.png" alt="Child drinking clean water">
+    </div>
+  </div>
+
+  <!-- Testimonials section -->
+  <div class="testimonials">
+    <h2>What Our Supporters Say</h2>
+    <div class="testimonial">“Charity:Water gave my community hope. Clean water changed everything for our school and health.” – Amina, Ethiopia</div>
+    <div class="testimonial">“I’ve never felt more confident about a donation. Charity:Water’s transparency is inspiring.” – Michael R., USA</div>
+    <div class="testimonial">“Seeing the impact of my gift made me realize how powerful we can be together.” – Priya K., India</div>
+  </div>
+
+  <!-- Stats section -->
+  <div class="stats">
+    <h2>Our Global Impact</h2>
+    <div class="stat-box">Over 111,000 water projects funded</div>
+    <div class="stat-box">29+ million people served</div>
+    <div class="stat-box">Across 29 countries</div>
+  </div>
+
+  <!-- Footer section -->
+  <div class="footer">
+    &copy; 2025 Charity:Water. All rights reserved.
+  </div>
+
 </body>
 </html>
